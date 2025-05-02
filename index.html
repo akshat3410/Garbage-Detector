@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recycle Detective 🕵️‍♂️</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Recycle Detective</h1>
+    <p>Upload an image of your waste item and find out what it is!</p>
+  </header>
+
+  <main>
+    <div class="upload-card">
+      <input type="file" id="file-input" accept="image/*" />
+      <button id="upload-btn" disabled>Analyze</button>
+    </div>
+
+    <div class="result-card hidden" id="result-card">
+      <img id="preview" src="" alt="Your upload preview" />
+      <div class="label">
+        Detected Category: <span id="category">—</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

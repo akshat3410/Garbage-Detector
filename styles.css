@@ -1,0 +1,77 @@
+/* styles.css */
+:root {
+    --light-green: #e6f4ea;
+    --accent-green: #4caf50;
+    --card-white: #ffffff;
+    --text-dark: #333;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light-green);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--card-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  h1 {
+    margin: 0.2rem 0;
+    color: var(--accent-green);
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  .upload-card, .result-card {
+    background: var(--card-white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .upload-card input {
+    width: 100%;
+  }
+  .upload-card button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--accent-green);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .upload-card button:disabled {
+    background: #9ccc9c;
+    cursor: not-allowed;
+  }
+  .result-card.hidden {
+    display: none;
+  }
+  .result-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .label {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
